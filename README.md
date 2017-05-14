@@ -16,7 +16,7 @@ awk 'FNR==NR{old[$0];next};!($0 in old)' libsystem.txt engage.txt > libsystem_re
 grep -e "libsystem_network.dylib" engage.txt > network.txt
 ```
 
-//
+// List all files by size greater than 1GB
 ```
 find / -type f -size +1GB -exec ls -lh {} \; 2> /dev/null
 ```
