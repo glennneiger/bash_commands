@@ -21,6 +21,11 @@ grep -e "libsystem_network.dylib" engage.txt > network.txt
 find / -type f -size +1GB -exec ls -lh {} \; 2> /dev/null
 ```
 
+// List all TCP connections at ipv4 at port 9001
+```
+lsof -n -i4TCP:9001
+```
+
 // tree a directory
 ```
 #!/bin/bash
