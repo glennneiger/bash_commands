@@ -59,7 +59,9 @@ This temporary block will expire if no connection attempts are made for about on
 Yet another possibility is that there is a firewall blocking access to the ports used by APNs. Please see IP Address Range Used by the Push Service for details. Try running a telnet command on your server to see if the server can reach APNs, like this:
 
 $ telnet 1-courier.push.apple.com 5223
+
 $ telnet gateway.sandbox.push.apple.com 2195
+
 $ telnet gateway.push.apple.com 2195
 
 
