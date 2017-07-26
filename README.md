@@ -9,9 +9,13 @@ $ /System/Library/PrivateFrameworks/ApplePushService.framework/apsctl status
 To enable logging on OS X, use the following commands:
 
 $ sudo touch /Library/Logs/apsd.log
+
 $ sudo defaults write /Library/Preferences/com.apple.apsd APSWriteLogs -bool TRUE
+
 $ sudo defaults write /Library/Preferences/com.apple.apsd APSLogLevel -int 7
+
 $ sudo killall apsd
+
 The logs are stored in /Library/Logs/apsd.log
 
 
