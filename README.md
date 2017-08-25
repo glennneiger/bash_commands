@@ -1,5 +1,10 @@
 # bash_commands
 
+#list of all iOS IPSW
+curl http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wa/com.apple.jingle.appserver.client.MZITunesClientCheck/version | grep ipsw | grep 7.0.4 | sort -u | sed 's/<string>//g' | sed 's/<\/string>//g' | grep -v protected | awk '{$1=$1}1'
+
+
+
 Enabling Push Status Messages on OS X
 
 To obtain the current state of the APNs daemon on OS X, use this command:
